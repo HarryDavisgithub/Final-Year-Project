@@ -28,21 +28,17 @@ public class Board {
         return 3;
     }
     
-    public void add(int num){
+    public boolean add(int num){
         if(tile[num].isFilled()){
             System.out.println("Row full");//add error message saying colum filled
         }else{
-            //gui.addCounterVisual();
-            for(int i = 0; i <5; i++){
-                if(anythingBelow(num)){
-                    addBoardTile(num);
-                    break;
-                }else{
-                    num++;
-
-                }
+            if(anythingBelow(num)){
+                 addBoardTile(num);
+                 return true;
             }
+            
         }
+        return false;
     }
     
     public boolean anythingBelow(int num) {

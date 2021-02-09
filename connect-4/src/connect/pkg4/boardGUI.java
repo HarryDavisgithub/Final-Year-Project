@@ -5,18 +5,28 @@
  */
 package connect.pkg4;
 
+import javax.swing.JLabel;
+import java.util.ArrayList;
+
 /**
  *
  * @author harry
  */
 public class boardGUI extends javax.swing.JFrame {
     Board board;
+    ArrayList<JLabel> label = new ArrayList<JLabel>();
     /**
      * Creates new form boardGUI
      */
     public boardGUI() {
         initComponents();
         board = new Board();
+        label.add(C1Tile1);
+        label.add(C1Tile2);
+        label.add(C1Tile3);
+        label.add(C1Tile4);
+        label.add(C1Tile5);
+        label.add(C1Tile6);
     }
 
     /**
@@ -44,18 +54,6 @@ public class boardGUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 255), 12, true));
-
-        C1Tile1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png"))); // NOI18N
-
-        C1Tile2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png"))); // NOI18N
-
-        C1Tile3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png"))); // NOI18N
-
-        C1Tile4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png"))); // NOI18N
-
-        C1Tile5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png"))); // NOI18N
-
-        C1Tile6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -130,15 +128,28 @@ public class boardGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void C1ButtonGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ButtonGActionPerformed
-        
-        board.add(0);
+        //System.out.println("yes");
+        addCounterVisual(0);
     }//GEN-LAST:event_C1ButtonGActionPerformed
 
                                             
-    private void addCounterVisual(){
+    private void addCounterVisual(int x){
+        int num = x;
+        String s;
+        for(int i = 0; i <6; i++){
+            label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
+            if(board.add(num)){
+                label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png")));
+                break;
+            }else{
+                num++;
+            }
+    
+        }
         
-    }     
+    }
         
+       
        
     
      
