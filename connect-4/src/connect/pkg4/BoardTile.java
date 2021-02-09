@@ -37,7 +37,7 @@ public class BoardTile {
     }
     
     public String toString(){
-        String s = "=========================\n Array Pos:" + arraypos + "\nTile filled:" + filled + "\n Colour: " + colour + "\n=========================";
+        String s = "\n=========================\n Array Pos:" + arraypos + "\nTile filled:" + filled + "\n Colour: " + colour + "\n=========================";
         return s;
     }
 }

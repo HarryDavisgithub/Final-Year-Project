@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 public class boardGUI extends javax.swing.JFrame {
     Board board;
     ArrayList<JLabel> label = new ArrayList<JLabel>();
+    int turn = 1;
     /**
      * Creates new form boardGUI
      */
@@ -67,7 +68,7 @@ public class boardGUI extends javax.swing.JFrame {
         label.add(C1Tile41);
         label.add(C1Tile42);
         
-        
+        //System.out.println(label.toString());
     }
 
     /**
@@ -420,6 +421,7 @@ public class boardGUI extends javax.swing.JFrame {
         );
 
         C1Button.setBackground(new java.awt.Color(255, 255, 255));
+        C1Button.setText("1");
         C1Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C1Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C1Button.setOpaque(false);
@@ -431,6 +433,7 @@ public class boardGUI extends javax.swing.JFrame {
         });
 
         C3Button.setBackground(new java.awt.Color(255, 255, 255));
+        C3Button.setText("3");
         C3Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C3Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C3Button.setOpaque(false);
@@ -442,6 +445,7 @@ public class boardGUI extends javax.swing.JFrame {
         });
 
         C4Button.setBackground(new java.awt.Color(255, 255, 255));
+        C4Button.setText("4");
         C4Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C4Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C4Button.setOpaque(false);
@@ -453,6 +457,7 @@ public class boardGUI extends javax.swing.JFrame {
         });
 
         C2Button.setBackground(new java.awt.Color(255, 255, 255));
+        C2Button.setText("2");
         C2Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C2Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C2Button.setOpaque(false);
@@ -464,6 +469,7 @@ public class boardGUI extends javax.swing.JFrame {
         });
 
         C7Button.setBackground(new java.awt.Color(255, 255, 255));
+        C7Button.setText("7");
         C7Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C7Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C7Button.setOpaque(false);
@@ -475,6 +481,7 @@ public class boardGUI extends javax.swing.JFrame {
         });
 
         C6Button.setBackground(new java.awt.Color(255, 255, 255));
+        C6Button.setText("6");
         C6Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C6Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C6Button.setOpaque(false);
@@ -486,6 +493,7 @@ public class boardGUI extends javax.swing.JFrame {
         });
 
         C5Button.setBackground(new java.awt.Color(255, 255, 255));
+        C5Button.setText("5");
         C5Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C5Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C5Button.setOpaque(false);
@@ -577,12 +585,18 @@ public class boardGUI extends javax.swing.JFrame {
 
                                             
     private void addCounterVisual(int x){
+        
         int num = x;
+        String colour = "/connect/pkg4/images/counterRed.png";
+        if(turn%2 == 0){colour = "/connect/pkg4/images/counterYellow.png";}
+        
         if(board.tileFull(num) == false){
             for(int i = 0; i <6; i++){
                 label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
+                
                 if(board.add(num)){
-                    label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png")));
+                    label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource(colour)));
+                    turn++;
                     break;
                 }else{
                     label.get(num).setIcon(null);
