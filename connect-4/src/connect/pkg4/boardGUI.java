@@ -7,6 +7,9 @@ package connect.pkg4;
 
 import javax.swing.JLabel;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -27,6 +30,44 @@ public class boardGUI extends javax.swing.JFrame {
         label.add(C1Tile4);
         label.add(C1Tile5);
         label.add(C1Tile6);
+        label.add(C1Tile7);
+        label.add(C1Tile8);
+        label.add(C1Tile9);
+        label.add(C1Tile10);
+        label.add(C1Tile11);
+        label.add(C1Tile12);
+        label.add(C1Tile13);
+        label.add(C1Tile14);
+        label.add(C1Tile15);
+        label.add(C1Tile16);
+        label.add(C1Tile17);
+        label.add(C1Tile18);
+        label.add(C1Tile19);
+        label.add(C1Tile20);
+        label.add(C1Tile21);
+        label.add(C1Tile22);
+        label.add(C1Tile23);
+        label.add(C1Tile24);
+        label.add(C1Tile25);
+        label.add(C1Tile26);
+        label.add(C1Tile27);
+        label.add(C1Tile28);
+        label.add(C1Tile29);
+        label.add(C1Tile30);
+        label.add(C1Tile31);
+        label.add(C1Tile32);
+        label.add(C1Tile33);
+        label.add(C1Tile34);
+        label.add(C1Tile35);
+        label.add(C1Tile36);
+        label.add(C1Tile37);
+        label.add(C1Tile38);
+        label.add(C1Tile39);
+        label.add(C1Tile40);
+        label.add(C1Tile41);
+        label.add(C1Tile42);
+        
+        
     }
 
     /**
@@ -45,7 +86,49 @@ public class boardGUI extends javax.swing.JFrame {
         C1Tile4 = new javax.swing.JLabel();
         C1Tile5 = new javax.swing.JLabel();
         C1Tile6 = new javax.swing.JLabel();
-        C1ButtonG = new javax.swing.JButton();
+        C1Tile7 = new javax.swing.JLabel();
+        C1Tile8 = new javax.swing.JLabel();
+        C1Tile9 = new javax.swing.JLabel();
+        C1Tile10 = new javax.swing.JLabel();
+        C1Tile11 = new javax.swing.JLabel();
+        C1Tile12 = new javax.swing.JLabel();
+        C1Tile13 = new javax.swing.JLabel();
+        C1Tile14 = new javax.swing.JLabel();
+        C1Tile15 = new javax.swing.JLabel();
+        C1Tile16 = new javax.swing.JLabel();
+        C1Tile17 = new javax.swing.JLabel();
+        C1Tile18 = new javax.swing.JLabel();
+        C1Tile19 = new javax.swing.JLabel();
+        C1Tile20 = new javax.swing.JLabel();
+        C1Tile21 = new javax.swing.JLabel();
+        C1Tile22 = new javax.swing.JLabel();
+        C1Tile23 = new javax.swing.JLabel();
+        C1Tile24 = new javax.swing.JLabel();
+        C1Tile25 = new javax.swing.JLabel();
+        C1Tile26 = new javax.swing.JLabel();
+        C1Tile27 = new javax.swing.JLabel();
+        C1Tile28 = new javax.swing.JLabel();
+        C1Tile29 = new javax.swing.JLabel();
+        C1Tile30 = new javax.swing.JLabel();
+        C1Tile31 = new javax.swing.JLabel();
+        C1Tile32 = new javax.swing.JLabel();
+        C1Tile33 = new javax.swing.JLabel();
+        C1Tile34 = new javax.swing.JLabel();
+        C1Tile35 = new javax.swing.JLabel();
+        C1Tile36 = new javax.swing.JLabel();
+        C1Tile37 = new javax.swing.JLabel();
+        C1Tile38 = new javax.swing.JLabel();
+        C1Tile39 = new javax.swing.JLabel();
+        C1Tile40 = new javax.swing.JLabel();
+        C1Tile41 = new javax.swing.JLabel();
+        C1Tile42 = new javax.swing.JLabel();
+        C1Button = new javax.swing.JButton();
+        C3Button = new javax.swing.JButton();
+        C4Button = new javax.swing.JButton();
+        C2Button = new javax.swing.JButton();
+        C7Button = new javax.swing.JButton();
+        C6Button = new javax.swing.JButton();
+        C5Button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Connect 4");
@@ -54,6 +137,132 @@ public class boardGUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 255), 12, true));
+
+        C1Tile1.setBackground(java.awt.Color.lightGray);
+        C1Tile1.setOpaque(true);
+
+        C1Tile2.setBackground(java.awt.Color.lightGray);
+        C1Tile2.setOpaque(true);
+
+        C1Tile3.setBackground(java.awt.Color.lightGray);
+        C1Tile3.setOpaque(true);
+
+        C1Tile4.setBackground(java.awt.Color.lightGray);
+        C1Tile4.setOpaque(true);
+
+        C1Tile5.setBackground(java.awt.Color.lightGray);
+        C1Tile5.setOpaque(true);
+
+        C1Tile6.setBackground(java.awt.Color.lightGray);
+        C1Tile6.setOpaque(true);
+
+        C1Tile7.setBackground(java.awt.Color.lightGray);
+        C1Tile7.setOpaque(true);
+
+        C1Tile8.setBackground(java.awt.Color.lightGray);
+        C1Tile8.setOpaque(true);
+
+        C1Tile9.setBackground(java.awt.Color.lightGray);
+        C1Tile9.setOpaque(true);
+
+        C1Tile10.setBackground(java.awt.Color.lightGray);
+        C1Tile10.setOpaque(true);
+
+        C1Tile11.setBackground(java.awt.Color.lightGray);
+        C1Tile11.setOpaque(true);
+
+        C1Tile12.setBackground(java.awt.Color.lightGray);
+        C1Tile12.setOpaque(true);
+
+        C1Tile13.setBackground(java.awt.Color.lightGray);
+        C1Tile13.setOpaque(true);
+
+        C1Tile14.setBackground(java.awt.Color.lightGray);
+        C1Tile14.setOpaque(true);
+
+        C1Tile15.setBackground(java.awt.Color.lightGray);
+        C1Tile15.setOpaque(true);
+
+        C1Tile16.setBackground(java.awt.Color.lightGray);
+        C1Tile16.setOpaque(true);
+
+        C1Tile17.setBackground(java.awt.Color.lightGray);
+        C1Tile17.setOpaque(true);
+
+        C1Tile18.setBackground(java.awt.Color.lightGray);
+        C1Tile18.setOpaque(true);
+
+        C1Tile19.setBackground(java.awt.Color.lightGray);
+        C1Tile19.setOpaque(true);
+
+        C1Tile20.setBackground(java.awt.Color.lightGray);
+        C1Tile20.setOpaque(true);
+
+        C1Tile21.setBackground(java.awt.Color.lightGray);
+        C1Tile21.setOpaque(true);
+
+        C1Tile22.setBackground(java.awt.Color.lightGray);
+        C1Tile22.setOpaque(true);
+
+        C1Tile23.setBackground(java.awt.Color.lightGray);
+        C1Tile23.setOpaque(true);
+
+        C1Tile24.setBackground(java.awt.Color.lightGray);
+        C1Tile24.setOpaque(true);
+
+        C1Tile25.setBackground(java.awt.Color.lightGray);
+        C1Tile25.setOpaque(true);
+
+        C1Tile26.setBackground(java.awt.Color.lightGray);
+        C1Tile26.setOpaque(true);
+
+        C1Tile27.setBackground(java.awt.Color.lightGray);
+        C1Tile27.setOpaque(true);
+
+        C1Tile28.setBackground(java.awt.Color.lightGray);
+        C1Tile28.setOpaque(true);
+
+        C1Tile29.setBackground(java.awt.Color.lightGray);
+        C1Tile29.setOpaque(true);
+
+        C1Tile30.setBackground(java.awt.Color.lightGray);
+        C1Tile30.setOpaque(true);
+
+        C1Tile31.setBackground(java.awt.Color.lightGray);
+        C1Tile31.setOpaque(true);
+
+        C1Tile32.setBackground(java.awt.Color.lightGray);
+        C1Tile32.setOpaque(true);
+
+        C1Tile33.setBackground(java.awt.Color.lightGray);
+        C1Tile33.setOpaque(true);
+
+        C1Tile34.setBackground(java.awt.Color.lightGray);
+        C1Tile34.setOpaque(true);
+
+        C1Tile35.setBackground(java.awt.Color.lightGray);
+        C1Tile35.setOpaque(true);
+
+        C1Tile36.setBackground(java.awt.Color.lightGray);
+        C1Tile36.setOpaque(true);
+
+        C1Tile37.setBackground(java.awt.Color.lightGray);
+        C1Tile37.setOpaque(true);
+
+        C1Tile38.setBackground(java.awt.Color.lightGray);
+        C1Tile38.setOpaque(true);
+
+        C1Tile39.setBackground(java.awt.Color.lightGray);
+        C1Tile39.setOpaque(true);
+
+        C1Tile40.setBackground(java.awt.Color.lightGray);
+        C1Tile40.setOpaque(true);
+
+        C1Tile41.setBackground(java.awt.Color.lightGray);
+        C1Tile41.setOpaque(true);
+
+        C1Tile42.setBackground(java.awt.Color.lightGray);
+        C1Tile42.setOpaque(true);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -68,35 +277,222 @@ public class boardGUI extends javax.swing.JFrame {
                     .addComponent(C1Tile3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(C1Tile2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(C1Tile6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(541, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(C1Tile10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile12, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(C1Tile16, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile17, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile15, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile14, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile18, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(C1Tile22, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile23, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile19, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile21, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile20, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile24, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(C1Tile28, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile29, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile25, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile27, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile26, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile30, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(C1Tile34, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile35, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile31, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile33, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile32, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile36, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(C1Tile40, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile41, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile37, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile39, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile38, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1Tile42, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(C1Tile1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(C1Tile2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(C1Tile3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(C1Tile4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(C1Tile5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                .addComponent(C1Tile6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile37, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile38, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile39, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile40, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile41, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                        .addComponent(C1Tile42, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile31, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile32, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile33, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile34, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile35, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(C1Tile36, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile25, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile26, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile27, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile28, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile29, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(C1Tile30, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile19, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile20, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile21, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile22, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile23, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(C1Tile24, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile13, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile14, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile15, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile16, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile17, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(C1Tile18, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile10, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile11, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(C1Tile12, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(C1Tile1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(C1Tile2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(C1Tile5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(C1Tile6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        C1ButtonG.setBackground(new java.awt.Color(255, 255, 255));
-        C1ButtonG.setBorder(null);
-        C1ButtonG.setBorderPainted(false);
-        C1ButtonG.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        C1ButtonG.setOpaque(false);
-        C1ButtonG.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
-        C1ButtonG.addActionListener(new java.awt.event.ActionListener() {
+        C1Button.setBackground(new java.awt.Color(255, 255, 255));
+        C1Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C1Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C1Button.setOpaque(false);
+        C1Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C1Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                C1ButtonGActionPerformed(evt);
+                C1ButtonActionPerformed(evt);
+            }
+        });
+
+        C3Button.setBackground(new java.awt.Color(255, 255, 255));
+        C3Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C3Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C3Button.setOpaque(false);
+        C3Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C3Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C3ButtonActionPerformed(evt);
+            }
+        });
+
+        C4Button.setBackground(new java.awt.Color(255, 255, 255));
+        C4Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C4Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C4Button.setOpaque(false);
+        C4Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C4Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C4ButtonActionPerformed(evt);
+            }
+        });
+
+        C2Button.setBackground(new java.awt.Color(255, 255, 255));
+        C2Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C2Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C2Button.setOpaque(false);
+        C2Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C2Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C2ButtonActionPerformed(evt);
+            }
+        });
+
+        C7Button.setBackground(new java.awt.Color(255, 255, 255));
+        C7Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C7Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C7Button.setOpaque(false);
+        C7Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C7Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C7ButtonActionPerformed(evt);
+            }
+        });
+
+        C6Button.setBackground(new java.awt.Color(255, 255, 255));
+        C6Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C6Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C6Button.setOpaque(false);
+        C6Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C6Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C6ButtonActionPerformed(evt);
+            }
+        });
+
+        C5Button.setBackground(new java.awt.Color(255, 255, 255));
+        C5Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        C5Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        C5Button.setOpaque(false);
+        C5Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
+        C5Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C5ButtonActionPerformed(evt);
             }
         });
 
@@ -107,18 +503,41 @@ public class boardGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(253, 253, 253)
+                        .addGap(274, 274, 274)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(264, 264, 264)
-                        .addComponent(C1ButtonG, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(294, Short.MAX_VALUE))
+                        .addGap(301, 301, 301)
+                        .addComponent(C1Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(C2Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
+                        .addComponent(C3Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(C4Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(C5Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(C6Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(C7Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(C1ButtonG, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(C3Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(C2Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(C1Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(C4Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(C5Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(C6Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(C7Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(151, Short.MAX_VALUE))
@@ -127,25 +546,51 @@ public class boardGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void C1ButtonGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ButtonGActionPerformed
-        //System.out.println("yes");
+    private void C1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ButtonActionPerformed
+
         addCounterVisual(0);
-    }//GEN-LAST:event_C1ButtonGActionPerformed
+    }//GEN-LAST:event_C1ButtonActionPerformed
+
+    private void C3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C3ButtonActionPerformed
+        addCounterVisual(12);
+    }//GEN-LAST:event_C3ButtonActionPerformed
+
+    private void C4ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C4ButtonActionPerformed
+        addCounterVisual(18);
+    }//GEN-LAST:event_C4ButtonActionPerformed
+
+    private void C2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ButtonActionPerformed
+        addCounterVisual(6);
+    }//GEN-LAST:event_C2ButtonActionPerformed
+
+    private void C7ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C7ButtonActionPerformed
+        addCounterVisual(36);
+    }//GEN-LAST:event_C7ButtonActionPerformed
+
+    private void C6ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C6ButtonActionPerformed
+        addCounterVisual(30);
+    }//GEN-LAST:event_C6ButtonActionPerformed
+
+    private void C5ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C5ButtonActionPerformed
+        addCounterVisual(24);
+    }//GEN-LAST:event_C5ButtonActionPerformed
 
                                             
     private void addCounterVisual(int x){
         int num = x;
-        String s;
-        for(int i = 0; i <6; i++){
-            label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
-            if(board.add(num)){
-                label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png")));
-                break;
-            }else{
-                num++;
+        if(board.tileFull(num) == false){
+            for(int i = 0; i <6; i++){
+                label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
+                if(board.add(num)){
+                    label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png")));
+                    break;
+                }else{
+                    label.get(num).setIcon(null);
+                    num++;
+                }
+
             }
-    
-        }
+        }else{System.out.println("Column full!");}
         
     }
         
@@ -192,13 +637,55 @@ public class boardGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton C1ButtonG;
+    private javax.swing.JButton C1Button;
     private javax.swing.JLabel C1Tile1;
+    private javax.swing.JLabel C1Tile10;
+    private javax.swing.JLabel C1Tile11;
+    private javax.swing.JLabel C1Tile12;
+    private javax.swing.JLabel C1Tile13;
+    private javax.swing.JLabel C1Tile14;
+    private javax.swing.JLabel C1Tile15;
+    private javax.swing.JLabel C1Tile16;
+    private javax.swing.JLabel C1Tile17;
+    private javax.swing.JLabel C1Tile18;
+    private javax.swing.JLabel C1Tile19;
     private javax.swing.JLabel C1Tile2;
+    private javax.swing.JLabel C1Tile20;
+    private javax.swing.JLabel C1Tile21;
+    private javax.swing.JLabel C1Tile22;
+    private javax.swing.JLabel C1Tile23;
+    private javax.swing.JLabel C1Tile24;
+    private javax.swing.JLabel C1Tile25;
+    private javax.swing.JLabel C1Tile26;
+    private javax.swing.JLabel C1Tile27;
+    private javax.swing.JLabel C1Tile28;
+    private javax.swing.JLabel C1Tile29;
     private javax.swing.JLabel C1Tile3;
+    private javax.swing.JLabel C1Tile30;
+    private javax.swing.JLabel C1Tile31;
+    private javax.swing.JLabel C1Tile32;
+    private javax.swing.JLabel C1Tile33;
+    private javax.swing.JLabel C1Tile34;
+    private javax.swing.JLabel C1Tile35;
+    private javax.swing.JLabel C1Tile36;
+    private javax.swing.JLabel C1Tile37;
+    private javax.swing.JLabel C1Tile38;
+    private javax.swing.JLabel C1Tile39;
     private javax.swing.JLabel C1Tile4;
+    private javax.swing.JLabel C1Tile40;
+    private javax.swing.JLabel C1Tile41;
+    private javax.swing.JLabel C1Tile42;
     private javax.swing.JLabel C1Tile5;
     private javax.swing.JLabel C1Tile6;
+    private javax.swing.JLabel C1Tile7;
+    private javax.swing.JLabel C1Tile8;
+    private javax.swing.JLabel C1Tile9;
+    private javax.swing.JButton C2Button;
+    private javax.swing.JButton C3Button;
+    private javax.swing.JButton C4Button;
+    private javax.swing.JButton C5Button;
+    private javax.swing.JButton C6Button;
+    private javax.swing.JButton C7Button;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
