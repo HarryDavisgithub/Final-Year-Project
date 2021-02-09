@@ -11,7 +11,7 @@ package connect.pkg4;
  */
 public class BoardTile {
     private boolean filled;
-    private int colour; //0 = nothinbg 1 = red, 2 = blue
+    private int colour; //3 = nothinbg 1 = red, 0 = yellow
     private int arraypos = 0;
     
     public BoardTile(boolean fill, int col, int pos){

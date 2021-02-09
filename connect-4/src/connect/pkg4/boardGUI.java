@@ -130,6 +130,7 @@ public class boardGUI extends javax.swing.JFrame {
         C7Button = new javax.swing.JButton();
         C6Button = new javax.swing.JButton();
         C5Button = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Connect 4");
@@ -504,6 +505,14 @@ public class boardGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Output array");
+        jButton1.setToolTipText("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -511,7 +520,9 @@ public class boardGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(274, 274, 274)
+                        .addGap(84, 84, 84)
+                        .addComponent(jButton1)
+                        .addGap(111, 111, 111)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(301, 301, 301)
@@ -528,7 +539,7 @@ public class boardGUI extends javax.swing.JFrame {
                         .addComponent(C6Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(C7Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -546,9 +557,15 @@ public class boardGUI extends javax.swing.JFrame {
                             .addComponent(C5Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(C6Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(C7Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(151, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(266, 266, 266))))
         );
 
         pack();
@@ -583,6 +600,10 @@ public class boardGUI extends javax.swing.JFrame {
         addCounterVisual(24);
     }//GEN-LAST:event_C5ButtonActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        board.print();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
                                             
     private void addCounterVisual(int x){
         
@@ -592,9 +613,9 @@ public class boardGUI extends javax.swing.JFrame {
         
         if(board.tileFull(num) == false){
             for(int i = 0; i <6; i++){
-                label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
+                //label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
                 
-                if(board.add(num)){
+                if(board.add(num, turn%2)){
                     label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource(colour)));
                     turn++;
                     break;
@@ -700,6 +721,7 @@ public class boardGUI extends javax.swing.JFrame {
     private javax.swing.JButton C5Button;
     private javax.swing.JButton C6Button;
     private javax.swing.JButton C7Button;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

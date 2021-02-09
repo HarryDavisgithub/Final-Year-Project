@@ -17,21 +17,25 @@ public class Board {
     public Board(){
         int count = 0;
         for(int i = 0; i < 42; i++){
-            tile[i] = new BoardTile(false, 0, count);
+            tile[i] = new BoardTile(false, 3, count);
             count +=1;
         }
-     //System.out.println(Arrays.toString(tile));
+     
+    }
+    public void print(){
+        System.out.println(Arrays.toString(tile));
     }
     
-    public void addBoardTile(int num){
+    public void addBoardTile(int num, int col){
        BoardTile t = tile[num];
        t.fillTile();
+       t.setColour(col);
     }
     
-    public boolean add(int num){
+    public boolean add(int num, int col){
         if(anythingBelow(num)){
-            addBoardTile(num);
-        return true;
+            addBoardTile(num, col);
+            return true;
         }
         return false;
     }
@@ -41,18 +45,10 @@ public class Board {
     }
     
     public boolean anythingBelow(int num) {
-        //System.out.println("yes" + tile[num+1].isFilled());
-        //System.out.println("num: " + num + "   num%6: " + num%6 + "   num+1%6: " + num+1%6);
         if((num+1)%6 == 0 && num != 0){
-            System.out.println("yes");
             return true;
         }else{
-            if(tile[num+1].isFilled()){
-                System.out.println("yef");
-                return true;
-            }else{
-                return false;
-            }
+            return tile[num+1].isFilled();
         }
         
     }
