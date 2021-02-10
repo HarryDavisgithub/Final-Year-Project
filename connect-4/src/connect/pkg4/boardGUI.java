@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -617,6 +618,16 @@ public class boardGUI extends javax.swing.JFrame {
                 
                 if(board.add(num, turn%2)){
                     label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource(colour)));
+                    
+                    if(board.hasWon(num, turn%2)){
+                        String s;
+                        if(turn%2==0){
+                             s= "Yellow Wins!";
+                        }else{ 
+                            s = "Red Wins!";
+                        }
+                        
+                        JOptionPane.showMessageDialog(jPanel1, s);}
                     turn++;
                     break;
                 }else{

@@ -32,6 +32,14 @@ public class Board {
        t.setColour(col);
     }
     
+    public boolean hasWon(int lastPlace, int lastCol){
+        if(lastPlace < 5){
+            return false;
+        }
+        
+        return true;
+    }
+    
     public boolean add(int num, int col){
         if(anythingBelow(num)){
             addBoardTile(num, col);
