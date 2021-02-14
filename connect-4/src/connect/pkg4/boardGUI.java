@@ -17,15 +17,14 @@ import javax.swing.JOptionPane;
  * @author harry
  */
 public class boardGUI extends javax.swing.JFrame {
-    Board board;
+    Game game = new Game();
     ArrayList<JLabel> label = new ArrayList<JLabel>();
-    int turn = 1;
+
     /**
      * Creates new form boardGUI
      */
     public boardGUI() {
         initComponents();
-        board = new Board();
         label.add(C1Tile1);
         label.add(C1Tile2);
         label.add(C1Tile3);
@@ -131,7 +130,6 @@ public class boardGUI extends javax.swing.JFrame {
         C7Button = new javax.swing.JButton();
         C6Button = new javax.swing.JButton();
         C5Button = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Connect 4");
@@ -427,7 +425,6 @@ public class boardGUI extends javax.swing.JFrame {
         C1Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C1Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C1Button.setOpaque(false);
-        C1Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C1Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C1ButtonActionPerformed(evt);
@@ -439,7 +436,6 @@ public class boardGUI extends javax.swing.JFrame {
         C3Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C3Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C3Button.setOpaque(false);
-        C3Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C3Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C3ButtonActionPerformed(evt);
@@ -451,7 +447,6 @@ public class boardGUI extends javax.swing.JFrame {
         C4Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C4Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C4Button.setOpaque(false);
-        C4Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C4Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C4ButtonActionPerformed(evt);
@@ -463,7 +458,6 @@ public class boardGUI extends javax.swing.JFrame {
         C2Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C2Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C2Button.setOpaque(false);
-        C2Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C2Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C2ButtonActionPerformed(evt);
@@ -475,7 +469,6 @@ public class boardGUI extends javax.swing.JFrame {
         C7Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C7Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C7Button.setOpaque(false);
-        C7Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C7Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C7ButtonActionPerformed(evt);
@@ -487,7 +480,6 @@ public class boardGUI extends javax.swing.JFrame {
         C6Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C6Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C6Button.setOpaque(false);
-        C6Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C6Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C6ButtonActionPerformed(evt);
@@ -499,18 +491,9 @@ public class boardGUI extends javax.swing.JFrame {
         C5Button.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         C5Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         C5Button.setOpaque(false);
-        C5Button.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterRed.png"))); // NOI18N
         C5Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C5ButtonActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Output array");
-        jButton1.setToolTipText("");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
             }
         });
 
@@ -521,9 +504,7 @@ public class boardGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addComponent(jButton1)
-                        .addGap(111, 111, 111)
+                        .addGap(300, 300, 300)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(301, 301, 301)
@@ -558,15 +539,9 @@ public class boardGUI extends javax.swing.JFrame {
                             .addComponent(C5Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(C6Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(C7Button, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(151, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addGap(266, 266, 266))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(151, Short.MAX_VALUE))
         );
 
         pack();
@@ -574,73 +549,46 @@ public class boardGUI extends javax.swing.JFrame {
 
     private void C1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ButtonActionPerformed
 
-        addCounterVisual(0);
+        game.addCounterVisual(0, this);
     }//GEN-LAST:event_C1ButtonActionPerformed
 
     private void C3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C3ButtonActionPerformed
-        addCounterVisual(12);
+        game.addCounterVisual(12, this);
     }//GEN-LAST:event_C3ButtonActionPerformed
 
     private void C4ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C4ButtonActionPerformed
-        addCounterVisual(18);
+        game.addCounterVisual(18, this);
     }//GEN-LAST:event_C4ButtonActionPerformed
 
     private void C2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ButtonActionPerformed
-        addCounterVisual(6);
+        game.addCounterVisual(6, this);
     }//GEN-LAST:event_C2ButtonActionPerformed
 
     private void C7ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C7ButtonActionPerformed
-        addCounterVisual(36);
+        game.addCounterVisual(36, this);
     }//GEN-LAST:event_C7ButtonActionPerformed
 
     private void C6ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C6ButtonActionPerformed
-        addCounterVisual(30);
+        game.addCounterVisual(30, this);
     }//GEN-LAST:event_C6ButtonActionPerformed
 
     private void C5ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C5ButtonActionPerformed
-        addCounterVisual(24);
+        game.addCounterVisual(24, this);
     }//GEN-LAST:event_C5ButtonActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        board.print();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-                                            
-    private void addCounterVisual(int x){
+                                       
         
-        int num = x;
-        String colour = "/connect/pkg4/images/counterRed.png";
-        if(turn%2 == 0){colour = "/connect/pkg4/images/counterYellow.png";}
-        
-        if(board.tileFull(num) == false){
-            for(int i = 0; i <6; i++){
-                //label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/counterGray.png")));
-                
-                if(board.add(num, turn%2)){
-                    label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource(colour)));
-                    
-                    if(board.hasWon(num, turn%2)){
-                        String s;
-                        if(turn%2==0){
-                             s= "Yellow Wins!";
-                        }else{ 
-                            s = "Red Wins!";
-                        }
-                        
-                        JOptionPane.showMessageDialog(jPanel1, s);}
-                    turn++;
-                    break;
-                }else{
-                    label.get(num).setIcon(null);
-                    num++;
-                }
-
-            }
-        }else{System.out.println("Column full!");}
-        
+    public void showWinningMsg(String s){
+        JOptionPane.showMessageDialog(jPanel1, s);
     }
-        
-       
+    
+    public void placeCounter(int num, String col){
+        label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource(col)));
+    }
+    
+    public void removeCounter(int n){
+        label.get(n).setIcon(null);
+    }
+    
        
     
      
@@ -678,6 +626,7 @@ public class boardGUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new boardGUI().setVisible(true);
+                
             }
         });
     }
@@ -732,7 +681,10 @@ public class boardGUI extends javax.swing.JFrame {
     private javax.swing.JButton C5Button;
     private javax.swing.JButton C6Button;
     private javax.swing.JButton C7Button;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    
+
+    
 }

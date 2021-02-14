@@ -14,16 +14,13 @@ import java.util.Arrays;
 public class Board {
     BoardTile[] tile = new BoardTile[42];
     
+    
     public Board(){
         int count = 0;
         for(int i = 0; i < 42; i++){
             tile[i] = new BoardTile(false, 3, count);
             count +=1;
         }
-     
-    }
-    public void print(){
-        System.out.println(Arrays.toString(tile));
     }
     
     public void addBoardTile(int num, int col){
@@ -32,28 +29,23 @@ public class Board {
        t.setColour(col);
     }
     
-    public boolean hasWon(int lastPlace, int lastCol){
-        if(lastPlace < 5){
-            return false;
-        }
-        
-        return true;
-    }
-    
-    public boolean add(int num, int col){
-        if(anythingBelow(num)){
-            addBoardTile(num, col);
+    public boolean whatsOnTile(int p, int c){
+        if(tile[p].isFilled()){
+            if(tile[p].getColour() == c){
             return true;
-        }
+            }
+        } 
         return false;
     }
     
-    public boolean tileFull(int num){
+    public boolean isTileFull(int num){
         return tile[num].isFilled();
     }
     
     public boolean anythingBelow(int num) {
+        
         if((num+1)%6 == 0 && num != 0){
+            
             return true;
         }else{
             return tile[num+1].isFilled();
