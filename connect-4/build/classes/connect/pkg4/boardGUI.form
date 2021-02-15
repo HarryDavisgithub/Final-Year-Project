@@ -33,53 +33,46 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="336" max="-2" attributes="0"/>
+                      <Component id="C1Button" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="C2Button" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="C3Button" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="C4Button" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="C5Button" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="C6Button" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="C7Button" min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="301" max="-2" attributes="0"/>
-                      <Component id="C1Button" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="C2Button" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="C3Button" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="C4Button" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="C5Button" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="C6Button" min="-2" pref="70" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="C7Button" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="313" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="247" max="32767" attributes="0"/>
+              <EmptySpace pref="256" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="C3Button" min="-2" pref="70" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="C2Button" min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="C1Button" min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="C4Button" alignment="1" min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="C5Button" alignment="1" min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="C6Button" alignment="1" min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="C7Button" alignment="1" min="-2" pref="70" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+              <EmptySpace pref="82" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="C5Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="C7Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="C6Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="C4Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="C3Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="C2Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="C1Button" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="151" max="32767" attributes="0"/>
+              <EmptySpace pref="115" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -102,71 +95,71 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile4" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile5" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile1" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile3" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile2" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile6" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile10" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile11" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile7" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile9" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile8" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile12" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile16" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile17" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile13" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile15" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile14" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile18" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile22" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile23" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile19" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile21" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile20" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile24" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile28" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile29" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile25" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile27" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile26" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile30" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile34" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile35" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile31" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile33" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile32" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile36" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="C1Tile40" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile41" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile37" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile39" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile38" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="C1Tile42" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile4" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile5" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile1" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile3" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile2" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile6" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile10" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile11" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile7" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile9" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile8" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile12" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile16" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile17" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile13" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile15" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile14" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile18" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile22" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile23" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile19" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile21" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile20" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile24" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile28" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile29" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile25" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile27" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile26" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile30" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile34" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile35" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile31" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile33" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile32" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile36" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="C1Tile40" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile41" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile37" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile39" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile38" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="C1Tile42" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

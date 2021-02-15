@@ -51,30 +51,24 @@ public class Game {
     
     public boolean horizontal(int place, int col){
         int count = 1;
-        int p = place;
-        int o = place;
+        int p = place, o = place;
         
         p -= 6;
         o += 6;
         
         for(int i = 0; i < 3; i++){
-            
             if(p > 0){
                 if(board.whatsOnTile(p, col)){
                     p -= 6;
                     count++;
-                    System.out.println(count);
                 }
             }
-            
             if(o < 41){
                 if(board.whatsOnTile(o, col)){
                     o += 6;
                     count++;
-                    System.out.println("backwards" + count);
                 }
             }
-            
             if(count == 4){
                 return true;
             }
@@ -82,10 +76,94 @@ public class Game {
         return false;
     }
     
-    public void hasWon(int lastPlace, int lastCol){
+    public boolean vertical(int place, int col){
+        int count = 1;
+        int p = place, o = place;
         
+        p -= 1;
+        o += 1;
+        
+        for(int i = 0; i < 3; i++){
+            if((p+1)%6 != 0){
+                if(board.whatsOnTile(p, col)){
+                    p -= 1;
+                    count++;
+                }
+            }
+            if(o%6 != 0){
+                if(board.whatsOnTile(o, col)){
+                    o += 1;
+                    count++;
+                }
+            }
+            if(count == 4){
+                return true;
+            }
+        }
+        return false;
+    }
+    //BackSlash ////
+    public boolean backSlash(int place, int col){
+        int count = 1;
+        int p = place, o = place;
+        
+        p -= 5;
+        o += 5;
+
+        for(int i = 0; i < 3; i++){
+            if((p+4)%6 != 0 && p > 0){
+                if(board.whatsOnTile(p, col)){
+                    p -= 5;
+                    count++;
+                }
+            }
+            if((o-5)%6 != 0 && o < 41){
+                if(board.whatsOnTile(o, col)){
+                    o += 5;
+                    count++;
+                }
+            }
+            System.out.println("cont " + count);
+            if(count == 4){
+                return true;
+            }
+        }
+        return false;
+    }
+    //Slash \\\\\
+    public boolean slash(int place, int col){
+        int count = 1;
+        int p = place, o = place;
+        
+        p -= 7;
+        o += 7;
+        
+        for(int i = 0; i < 3; i++){
+            if((p+6)%6 != 0 && p > 0){
+                if(board.whatsOnTile(p, col)){
+                    p -= 7;
+                    count++;
+                }
+            }
+            if((o-7)%6 != 0 && o < 41){
+                if(board.whatsOnTile(o, col)){
+                    o += 7;
+                    count++;
+                }
+            }
+            System.out.println("cont " + count);
+            if(count == 4){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
+    public void hasWon(int lastPlace, int lastCol){
+        //horizontal(lastPlace, lastCol) || vertical(lastPlace, lastCol) || 
        
-            if(horizontal(lastPlace, lastCol)){
+            if(slash(lastPlace, lastCol) || backSlash(lastPlace, lastCol) || vertical(lastPlace, lastCol) || horizontal(lastPlace, lastCol)){
                 System.out.println("Winner!");
             }
             
