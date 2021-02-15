@@ -136,133 +136,175 @@ public class boardGUI extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setLocation(new java.awt.Point(100, 0));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 51, 255));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 255), 12, true));
 
         C1Tile1.setBackground(java.awt.Color.lightGray);
+        C1Tile1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile1.setOpaque(true);
 
         C1Tile2.setBackground(java.awt.Color.lightGray);
+        C1Tile2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile2.setOpaque(true);
 
         C1Tile3.setBackground(java.awt.Color.lightGray);
+        C1Tile3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile3.setOpaque(true);
 
         C1Tile4.setBackground(java.awt.Color.lightGray);
+        C1Tile4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile4.setOpaque(true);
 
         C1Tile5.setBackground(java.awt.Color.lightGray);
+        C1Tile5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile5.setOpaque(true);
 
         C1Tile6.setBackground(java.awt.Color.lightGray);
+        C1Tile6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile6.setOpaque(true);
 
         C1Tile7.setBackground(java.awt.Color.lightGray);
+        C1Tile7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile7.setOpaque(true);
 
         C1Tile8.setBackground(java.awt.Color.lightGray);
+        C1Tile8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile8.setOpaque(true);
 
         C1Tile9.setBackground(java.awt.Color.lightGray);
+        C1Tile9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile9.setOpaque(true);
 
         C1Tile10.setBackground(java.awt.Color.lightGray);
+        C1Tile10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile10.setOpaque(true);
 
         C1Tile11.setBackground(java.awt.Color.lightGray);
+        C1Tile11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile11.setOpaque(true);
 
         C1Tile12.setBackground(java.awt.Color.lightGray);
+        C1Tile12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile12.setOpaque(true);
 
         C1Tile13.setBackground(java.awt.Color.lightGray);
+        C1Tile13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile13.setOpaque(true);
 
         C1Tile14.setBackground(java.awt.Color.lightGray);
+        C1Tile14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile14.setOpaque(true);
 
         C1Tile15.setBackground(java.awt.Color.lightGray);
+        C1Tile15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile15.setOpaque(true);
 
         C1Tile16.setBackground(java.awt.Color.lightGray);
+        C1Tile16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile16.setOpaque(true);
 
         C1Tile17.setBackground(java.awt.Color.lightGray);
+        C1Tile17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile17.setOpaque(true);
 
         C1Tile18.setBackground(java.awt.Color.lightGray);
+        C1Tile18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile18.setOpaque(true);
 
         C1Tile19.setBackground(java.awt.Color.lightGray);
+        C1Tile19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile19.setOpaque(true);
 
         C1Tile20.setBackground(java.awt.Color.lightGray);
+        C1Tile20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile20.setOpaque(true);
 
         C1Tile21.setBackground(java.awt.Color.lightGray);
+        C1Tile21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile21.setOpaque(true);
 
         C1Tile22.setBackground(java.awt.Color.lightGray);
+        C1Tile22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile22.setOpaque(true);
 
         C1Tile23.setBackground(java.awt.Color.lightGray);
+        C1Tile23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile23.setOpaque(true);
 
         C1Tile24.setBackground(java.awt.Color.lightGray);
+        C1Tile24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile24.setOpaque(true);
 
         C1Tile25.setBackground(java.awt.Color.lightGray);
+        C1Tile25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile25.setOpaque(true);
 
         C1Tile26.setBackground(java.awt.Color.lightGray);
+        C1Tile26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile26.setOpaque(true);
 
         C1Tile27.setBackground(java.awt.Color.lightGray);
+        C1Tile27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile27.setOpaque(true);
 
         C1Tile28.setBackground(java.awt.Color.lightGray);
+        C1Tile28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile28.setOpaque(true);
 
         C1Tile29.setBackground(java.awt.Color.lightGray);
+        C1Tile29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile29.setOpaque(true);
 
         C1Tile30.setBackground(java.awt.Color.lightGray);
+        C1Tile30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile30.setOpaque(true);
 
         C1Tile31.setBackground(java.awt.Color.lightGray);
+        C1Tile31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile31.setOpaque(true);
 
         C1Tile32.setBackground(java.awt.Color.lightGray);
+        C1Tile32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile32.setOpaque(true);
 
         C1Tile33.setBackground(java.awt.Color.lightGray);
+        C1Tile33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile33.setOpaque(true);
 
         C1Tile34.setBackground(java.awt.Color.lightGray);
+        C1Tile34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile34.setOpaque(true);
 
         C1Tile35.setBackground(java.awt.Color.lightGray);
+        C1Tile35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile35.setOpaque(true);
 
         C1Tile36.setBackground(java.awt.Color.lightGray);
+        C1Tile36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile36.setOpaque(true);
 
         C1Tile37.setBackground(java.awt.Color.lightGray);
+        C1Tile37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile37.setOpaque(true);
 
         C1Tile38.setBackground(java.awt.Color.lightGray);
+        C1Tile38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile38.setOpaque(true);
 
         C1Tile39.setBackground(java.awt.Color.lightGray);
+        C1Tile39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile39.setOpaque(true);
 
         C1Tile40.setBackground(java.awt.Color.lightGray);
+        C1Tile40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile40.setOpaque(true);
 
         C1Tile41.setBackground(java.awt.Color.lightGray);
+        C1Tile41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile41.setOpaque(true);
 
         C1Tile42.setBackground(java.awt.Color.lightGray);
+        C1Tile42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/connect/pkg4/images/empty with blue grid.png"))); // NOI18N
         C1Tile42.setOpaque(true);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -581,9 +623,9 @@ public class boardGUI extends javax.swing.JFrame {
         label.get(num).setIcon(new javax.swing.ImageIcon(getClass().getResource(col)));
     }
     
-    public void removeCounter(int n){
-        label.get(n).setIcon(null);
-    }
+//    public void removeCounter(int n){
+//        label.get(n).setIcon(null);
+//    }
     
        
     

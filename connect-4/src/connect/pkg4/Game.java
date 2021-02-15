@@ -20,23 +20,23 @@ public class Game {
     public Game(){
         board = new Board();
     }
-    
+    //"/connect/pkg4/images/empty with blue grid.png"
     
     public void addCounterVisual(int x, boardGUI gui){
-        String colour = "/connect/pkg4/images/counterRed.png";
+        String colour = "/connect/pkg4/images/red with blue grid.jpg";
         int num = x;
         if(board.isTileFull(num) == false){
             for(int i = 0; i <6; i++){
                
                if(board.anythingBelow(num) == true){
-                   if(col%2 == 0){colour = "/connect/pkg4/images/counterYellow.png";}
+                   if(col%2 == 0){colour = "/connect/pkg4/images/yellow with blue grid.jpg";}
                    gui.placeCounter(num, colour);
                    board.addBoardTile(num, col%2);
                    hasWon(num, col%2);
                    col++;
                    break;  
                }else{
-                   gui.removeCounter(x);
+                   gui.placeCounter(num, "/connect/pkg4/images/empty with blue grid.png");
                    num++;
                }  
             }
