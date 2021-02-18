@@ -42,6 +42,10 @@ public class Board {
         return tile[num].isFilled();
     }
     
+    public int tileColour(int i){
+        return tile[i].getColour();
+    }
+    
     public boolean anythingBelow(int num) {
         
         if((num+1)%6 == 0 && num != 0){
