@@ -11,10 +11,16 @@ package connect.pkg4;
  */
 public class BoardTile {
     private boolean filled;
-    private int colour; //3 = nothinbg 1 = red, 0 = yellow
+    private Colour colour; //3 = nothinbg 1 = red, 0 = yellow
     private int arraypos = 0;
     
-    public BoardTile(boolean fill, int col, int pos){
+    public enum Colour {
+        RED,
+        YELLOW,
+        WHITE //empty
+    }
+    
+    public BoardTile(boolean fill, Colour col, int pos){
         filled = fill;
         colour = col;
         arraypos = pos;
@@ -28,11 +34,11 @@ public class BoardTile {
         filled = true;
     }
     
-    public int getColour(){
+    public Colour getColour(){
         return colour;
     }
     
-    public void setColour(int c){
+    public void setColour(Colour c){
         colour = c;
     }
     

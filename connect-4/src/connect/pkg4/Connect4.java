@@ -19,7 +19,7 @@ public class Connect4 {
     public static void main(String[] args) {
         
         
-        boardGUI gui = new boardGUI();
+        BoardGui gui = new BoardGui();
         gui.setVisible(true);
         
         
