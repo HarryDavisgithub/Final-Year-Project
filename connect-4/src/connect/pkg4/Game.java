@@ -6,6 +6,10 @@
 package connect.pkg4;
 
 import connect.pkg4.BoardTile.Colour;
+import java.awt.Color;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -26,16 +30,23 @@ public class Game {
         col = Colour.RED; //Sets starting colour
         int num = x;
         
+        
         if(board.isTileFull(num) == false){
             if(turn%2 == 0){
                 col = Colour.YELLOW; 
                 sColour = "/connect/pkg4/images/yellow with blue grid.jpg";
             }
+            if(turn%2 == 0){
+                gui.currentTurnText("RED", Color.red);
+            }else{
+                gui.currentTurnText("YELLOW", Color.orange);
+            }
+            
             
             for(int i = 0; i <6; i++){
                
                if(board.isTileBelowFull(num) == true){
-
+                   
                    gui.placeCounter(num, sColour);
                    board.addBoardTile(num, col);
                    
@@ -43,20 +54,18 @@ public class Game {
                        gui.showWinningMsg(whatColour());
                    }
                    turn++;
+                   
                    break;  
                }else{
-                   gui.placeCounter(num, sColour);
+                   gui.placeCounter(num, "/connect/pkg4/images/red with blue grid.jpg");
                    gui.placeCounter(num, "/connect/pkg4/images/empty with blue grid.png");
-                   
                    num++;
                }  
             }
         }else{System.out.println("Column full!");}
     }
     
-    public void counterLoop(int x, Colour col){
-        
-    }
+    
     
     public int checkForLine(int x, int step){
         Colour colour = board.tileColour(x);
