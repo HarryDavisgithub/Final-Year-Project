@@ -18,9 +18,8 @@ public class RandomAi {
     }
     
     public void runAI(BoardGui gui, Game game){
-       while(true){
-           game.addCounterVisual(genRanNum(), gui);
-       }
+        game.addCounterVisual(genRanNum(), gui);
+        System.out.println(genRanNum());
     }
     
     public int genRanNum(){

@@ -19,10 +19,13 @@ import javax.swing.JOptionPane;
 public class Game {
     private int turn = 1;
     private Colour col;
+    private int aiNum; 
     Board board;
+    RandomAi randAi;
     
     public Game(){
         board = new Board();
+        randAi = new RandomAi();
     }
     
     public void addCounterVisual(int x, BoardGui gui){
@@ -57,10 +60,13 @@ public class Game {
                    
                    break;  
                }else{
-                   gui.placeCounter(num, "/connect/pkg4/images/red with blue grid.jpg");
-                   gui.placeCounter(num, "/connect/pkg4/images/empty with blue grid.png");
+                   //gui.placeCounter(num, "/connect/pkg4/images/red with blue grid.jpg");
+                   //gui.placeCounter(num, "/connect/pkg4/images/empty with blue grid.png");
                    num++;
                }  
+            }
+            if(aiNum != 0 && turn%2 == 0) {
+                randAi.runAI(gui, this);
             }
         }else{System.out.println("Column full!");}
     }
@@ -104,6 +110,8 @@ public class Game {
         }
         return s;
     }
-    
+    public void setAi(int num){
+        aiNum = num;
+    }
     
 }
