@@ -6,6 +6,8 @@
 package connect.pkg4;
 
 import connect.pkg4.BoardTile.Colour;
+import static connect.pkg4.BoardTile.Colour.WHITE;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -27,6 +29,20 @@ public class Board {
        BoardTile t = tile[num];
        t.fillTile();
        t.setColour(col);
+    }
+    
+    public BoardTile[] getBoard(){
+        return tile;
+    }
+    
+    public void removeBoardTile(int num){
+       BoardTile t = tile[num];
+       t.emptyTile();
+       //t.setColour(Colour.WHITE);
+    }
+    
+    public int getPos(BoardTile b){
+        return b.getPos();
     }
     
     public boolean whatsOnTile(int p, Colour c){
@@ -54,4 +70,25 @@ public class Board {
         }
         
     }
+    
+    public ArrayList<Integer> createPossibleMoves(){
+        ArrayList<Integer> possibleMoves = new ArrayList<>();
+        
+        for(int c = 0; c < 42; c++){
+            if(isTileFull(c) == false){
+                if(isTileBelowFull(c)){
+                   possibleMoves.add(c);
+                }
+            }   
+            
+           
+        }
+//        for(int i: possibleMoves){
+//            System.out.print(i + " ");
+//        }
+//        System.out.print("\n");
+        return possibleMoves;
+    }
+    
+    
 }

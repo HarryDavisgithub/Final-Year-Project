@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/harry/Desktop/Final%20Year%20Project/connect-4/src/connect/pkg4/Game.java</file>
+            <file>file:/C:/Users/harry/Desktop/Final%20Year%20Project/connect-4/src/connect/pkg4/miniMax.java</file>
+            <file>file:/C:/Users/harry/Desktop/Final%20Year%20Project/connect-4/src/connect/pkg4/Board.java</file>
+            <file>file:/C:/Users/harry/Desktop/Final%20Year%20Project/connect-4/src/connect/pkg4/BoardTile.java</file>
+            <file>file:/C:/Users/harry/Desktop/Final%20Year%20Project/connect-4/src/connect/pkg4/Connect4.java</file>
+        </group>
     </open-files>
 </project-private>

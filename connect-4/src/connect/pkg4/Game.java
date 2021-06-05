@@ -22,15 +22,22 @@ public class Game {
     private int aiNum; 
     Board board;
     RandomAi randAi;
+    DefensiveAi defAi;
+    private int lastPos;
+    private ScoreState SS;
+    private miniMax mm;
     
     public Game(){
         board = new Board();
         randAi = new RandomAi();
+        SS = new ScoreState(this, board);
+        mm = new miniMax(this, board);
     }
     
     public void addCounterVisual(int x, BoardGui gui){
         String sColour = "/connect/pkg4/images/red with blue grid.jpg";
         col = Colour.RED; //Sets starting colour
+        gui.currentTurnText("YELLOW", Color.orange);
         int num = x;
         
         
@@ -38,13 +45,8 @@ public class Game {
             if(turn%2 == 0){
                 col = Colour.YELLOW; 
                 sColour = "/connect/pkg4/images/yellow with blue grid.jpg";
-            }
-            if(turn%2 == 0){
                 gui.currentTurnText("RED", Color.red);
-            }else{
-                gui.currentTurnText("YELLOW", Color.orange);
-            }
-            
+            }          
             
             for(int i = 0; i <6; i++){
                
@@ -52,29 +54,52 @@ public class Game {
                    
                    gui.placeCounter(num, sColour);
                    board.addBoardTile(num, col);
+                   //System.out.println("Pos is: " + num);
                    
-                   if(checkForWin(num)){
+                   if(checkForWin(num, 4)){
+                       System.out.println("winner: " + num);
                        gui.showWinningMsg(whatColour());
                    }
+                   
                    turn++;
                    
                    break;  
                }else{
-                   //gui.placeCounter(num, "/connect/pkg4/images/red with blue grid.jpg");
-                   //gui.placeCounter(num, "/connect/pkg4/images/empty with blue grid.png");
                    num++;
                }  
             }
             if(aiNum != 0 && turn%2 == 0) {
-                randAi.runAI(gui, this);
+                //randAi.runAI(gui, this);
+                //defAi.runAI(gui, this, lastPos);
+                //SS.score_position();
+                
+                
+                int move = mm.doAiMove();
+                //System.out.println(move + " ");
+                
+                
+                gui.placeCounter(move, "/connect/pkg4/images/yellow with blue grid.jpg");
+                board.addBoardTile(move, Colour.YELLOW);
+
+
+                if(checkForWin(move, 4)){
+                    gui.showWinningMsg(whatColour());
+                }
+                turn++;
+                
             }
         }else{System.out.println("Column full!");}
+        lastPos = x;
+        
     }
     
     
     
-    public int checkForLine(int x, int step){
-        Colour colour = board.tileColour(x);
+    
+    
+    
+    public int checkForLine(int x, int step, int lineNum, Colour col){
+        //Colour colour = board.tileColour(x);
         int i = 0;
         
         if(step == -1 || step == -7 || step == 5 ){
@@ -86,19 +111,25 @@ public class Game {
                 return 1;
             }  
         }
-        while(x > -1 && x < 42 && board.tileColour(x) == colour){
-                x += step;
-                i++;
+        while(x > -1 && x < 42 && board.tileColour(x) == col && i <= lineNum){
+            System.out.println("line:" + x);
+            x += step;
+            i++;
+            if(x%6 == 0) {
+                break;
+            }
+            
         }
+        System.out.println(" ");
         return i;
     }
     
-    public int getCompleteLine(int x, int step){
-        return checkForLine(x, step) + checkForLine(x, -step) -1;
+    public int getCompleteLine(int x, int step, int lineNum){
+        return checkForLine(x, step, lineNum, board.tileColour(x)) + checkForLine(x, -step, lineNum, board.tileColour(x)) -1;
     }
     
-    public boolean checkForWin(int x){
-        return getCompleteLine(x, 1) >= 4 || getCompleteLine(x, 6) >= 4 || getCompleteLine(x, 5) >= 4 || getCompleteLine(x, 7) >= 4;
+    public boolean checkForWin(int x, int lineNum){
+        return getCompleteLine(x, 1, lineNum) >= lineNum || getCompleteLine(x, 6, lineNum) >= lineNum || getCompleteLine(x, 5, lineNum) >= lineNum || getCompleteLine(x, 7, lineNum) >= lineNum;
     }
    
     public String whatColour(){
@@ -113,5 +144,10 @@ public class Game {
     public void setAi(int num){
         aiNum = num;
     }
+
     
+    public void runTest(){
+        board.createPossibleMoves();
+    }
 }
+

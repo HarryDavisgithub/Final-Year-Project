@@ -30,8 +30,17 @@ public class BoardTile {
         return filled;
     }
     
+    public int getPos(){
+        return arraypos;
+    }
+    
     public void fillTile(){
         filled = true;
+    }
+    
+    public void emptyTile(){
+        filled = false;
+        colour = Colour.WHITE;
     }
     
     public Colour getColour(){
@@ -43,7 +52,8 @@ public class BoardTile {
     }
     
     public String toString(){
-        String s = "\n=========================\n Array Pos:" + arraypos + "\nTile filled:" + filled + "\n Colour: " + colour + "\n=========================";
+        String s = colour + "";
         return s;
     }
 }
+//"\n=========================\n Array Pos:" + arraypos + "\nTile filled:" + filled + "\n Colour: " + colour + "\n=========================";
